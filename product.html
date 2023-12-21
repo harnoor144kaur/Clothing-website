@@ -1,0 +1,198 @@
+<html lang="en">
+  <head>
+    <title>Harnoor's Clothing Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="img/logo.png" class="logo" alt="logo image" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">My Cart</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+      <div class="single-pro-image">
+        <img
+          src="img/products/f1.jpeg"
+          width="100%"
+          id="MainImg"
+          alt="f1 image"
+        />
+
+        <div class="small-img-group">
+          <div class="small-img-col">
+            <img
+              src="img/products/f1.jpeg"
+              width="100%"
+              class="small-img"
+              alt="f1 image"
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="img/products/f12.webp"
+              width="100%"
+              class="small-img"
+              alt="f12 image"
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="img/products/f13.webp"
+              width="100%"
+              class="small-img"
+              alt="f13 image"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="single-pro-details">
+        <h5>littlebox</h5>
+        <h4>Cardigan skirt set</h4>
+        <h2>$35</h2>
+        <select>
+          <option>Select Size</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>XXL</option>
+        </select>
+        <input type="number" value="1" />
+        <button class="normal">Add To Cart</button>
+        <h4>Product Details</h4>
+        <p>
+          Flexible to your purpose and always on trend, this grey ribbed co-ord
+          set is appropriate for every occasion. This co-ord set consists of a
+          cardigan & skirt.
+        </p>
+        <p>
+          <strong>Cardigan:</strong> Grey ribbed cardigan, Round neck, Button
+          detail, Full-sleeves, drop-shoulder, Knitted fabric.
+        </p>
+        <p>
+          <strong>Skirt:</strong> Grey ribbed skirt, Elasticated waistband,
+          Slip-on closure, Above knee length, Knitted fabric.
+        </p>
+        <p>
+          <strong>Size & Fit:</strong>
+          The model (height 5'8) is wearing a size S
+        </p>
+        <p>
+          <strong>Material & Care:</strong>
+          90% Viscose, 10% Nylon
+        </p>
+      </div>
+    </section>
+
+    <section id="products" class="section-p1">
+      <h2>Featured Products</h2>
+      <p>Exclusive Collection & New Modern Design</p>
+      <div class="pro-container">
+        <div class="product">
+          <img src="img/products/f7.webp" alt="f7 image" />
+          <div class="des">
+            <span>littlebox</span>
+            <h5>Black jacket and pant set</h5>
+            <h4>$38</h4>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/products/f4.webp" alt="f4 image" />
+          <div class="des">
+            <span>littlebox</span>
+            <h5>Knitted blue top</h5>
+            <h4>$20</h4>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/products/f3.webp" alt="f3 image" />
+          <div class="des">
+            <span>littlebox</span>
+            <h5>Sea green wide pants</h5>
+            <h4>$24</h4>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/products/f2.webp" alt="f2 image" />
+          <div class="des">
+            <span>littlebox</span>
+            <h5>Embroidered white top</h5>
+            <h4>$22</h4>
+          </div>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="img/logo.png" alt="logo" />
+        <h4>Contact</h4>
+        <p>
+          <strong>Address:</strong> 82 Pali Hill, carter road, Chandigarh,
+          497311
+        </p>
+        <p><strong>Phone:</strong> +91 8432920000</p>
+        <p><strong>open:</strong> Mon - Sat, 9:00 am- 9:00 pm</p>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="img/pay/app.jpg" alt="apple" />
+          <img src="img/pay/play.jpg" alt="google" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="img/pay/pay.png" alt="pay" />
+      </div>
+
+      <div class="copyright">
+        <p>© Harnoor - Clothing Ecommerce Website</p>
+      </div>
+    </footer>
+
+    <script>
+      var Main_img = document.getElementById("MainImg");
+      var small_img = document.getElementsByClassName("small-img");
+
+      small_img[0].onclick = function () {
+        Main_img.src = small_img[0].src;
+      };
+      small_img[1].onclick = function () {
+        Main_img.src = small_img[1].src;
+      };
+      small_img[2].onclick = function () {
+        Main_img.src = small_img[2].src;
+      };
+      small_img[3].onclick = function () {
+        Main_img.src = small_img[3].src;
+      };
+    </script>
+  </body>
+</html>
